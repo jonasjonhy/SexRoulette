@@ -14,5 +14,7 @@ xmlns:android= "http://schemas.android.com/apk/res/android"
                        android:duration="500" />
           <item android:drawable="@drawable/ruleta2" 
                        android:duration="500" />
+          <item android:drawable="@drawable/ruleta3" 
+                       android:duration="1000" />
 </animation-list>
 

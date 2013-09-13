@@ -42,7 +42,7 @@ public class Juego extends Activity {
         RotateAnimation animation = new RotateAnimation(inicio, fin,
         		Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 		animation.setInterpolator(new LinearInterpolator());
-		animation.setDuration((long) (fin+4000));
+		animation.setDuration((long) (fin+4500));
 		animation.setInterpolator(this, android.R.anim.decelerate_interpolator);
 		animation.setFillAfter(true);
 		animation.setAnimationListener(new Animation.AnimationListener() {
@@ -82,5 +82,8 @@ public class Juego extends Activity {
 		aniView.startAnimation(animation);
     }
     
-    
+    public void lanzarMenuPrincipal(View view){
+        this.finish();
+      }  
+
 }

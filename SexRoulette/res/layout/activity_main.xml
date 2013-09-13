@@ -2,27 +2,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ruleta" />
 
-    <Button
-        android:id="@+id/button1"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="33dp"
+        android:layout_alignParentRight="true"
         android:onClick="lanzarJuego"
-        android:text="Button" />
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true"
+        android:src="@drawable/botonjugardown" />
+
 
 </RelativeLayout>
