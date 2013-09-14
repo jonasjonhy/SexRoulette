@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity" 
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -15,17 +16,37 @@
         android:layout_height="150dp"
         android:contentDescription="@string/app_name"
         android:layout_centerInParent="true"
-        android:src="@drawable/ruleta" />
+        android:src="@drawable/ruleta2encendidasbtn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo1" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:onClick="lanzarJuego"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:contentDescription="@string/app_name"
-        android:layout_centerInParent="true"
+        android:onClick="lanzarJuego"
         android:src="@drawable/botonjugardown" />
 
+     <com.google.ads.AdView
+         android:id="@+id/anuncioPrincipal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         ads:adSize="BANNER"
+         ads:adUnitId="ca-app-pub-7774843908695472/3993482813"
+         ads:loadAdOnCreate="true"
+         ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
+     </com.google.ads.AdView>
 
 </RelativeLayout>

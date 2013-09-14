@@ -2,8 +2,12 @@ package es.dcarvajal7.sexroulette;
 
 import java.util.Random;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +29,9 @@ public class Juego extends Activity {
 
         setContentView(R.layout.juego);
 
+        AdView adView = (AdView)this.findViewById(R.id.anuncioJuego);
+        adView.loadAd(new AdRequest());
+        
     }
     
     public void lanzarRuleta(View view){
@@ -67,10 +74,13 @@ public class Juego extends Activity {
             	}else if(seleccion>270 && seleccion <=330){
             		accion="tocar";
             	}else if(seleccion>330 && seleccion <=360){
-            		accion="tocar";
+            		accion="lamer";
             	}
             	 Toast toast1 = Toast.makeText(getApplicationContext(),accion + seleccion, Toast.LENGTH_SHORT);
             	 toast1.show();
+            	 Intent i = new Intent(Juego.this, PantallaResultado.class);
+            	 i.putExtra("pantalla", "juego1");
+                 startActivity(i);
             }
 
             @Override

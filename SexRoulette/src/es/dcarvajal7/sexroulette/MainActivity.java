@@ -1,5 +1,8 @@
 package es.dcarvajal7.sexroulette;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 import android.R.anim;
 import android.app.Activity;
 import android.content.Intent;
@@ -17,6 +20,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		AdView adView = (AdView)this.findViewById(R.id.anuncioPrincipal);
+        adView.loadAd(new AdRequest());
 		
         ImageView aniView = (ImageView) findViewById(R.id.imageView1);
 

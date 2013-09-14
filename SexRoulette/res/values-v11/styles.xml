@@ -8,4 +8,9 @@
         <!-- API 11 theme customizations can go here. -->
     </style>
 
+    <style 
+        name="Theme.Dialogo"
+        parent="android:Theme.Holo.Dialog">
+    </style>
+    
 </resources>

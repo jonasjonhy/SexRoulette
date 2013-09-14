@@ -22,34 +22,53 @@ public final class R {
     }
     public static final class drawable {
         public static final int animacion=0x7f020000;
-        public static final int botonatras=0x7f020001;
-        public static final int botonjugar=0x7f020002;
-        public static final int botonjugardown=0x7f020003;
-        public static final int botonjugarpulsado=0x7f020004;
-        public static final int botonsalir=0x7f020005;
-        public static final int botonsalirpulsado=0x7f020006;
-        public static final int corazones=0x7f020007;
-        public static final int gradient=0x7f020008;
-        public static final int hielo1=0x7f020009;
-        public static final int ic_launcher=0x7f02000a;
-        public static final int ruleta=0x7f02000b;
-        public static final int ruleta1=0x7f02000c;
-        public static final int ruleta2=0x7f02000d;
-        public static final int ruleta3=0x7f02000e;
-        public static final int titulojuego=0x7f02000f;
+        public static final int animacion2=0x7f020001;
+        public static final int botonatras=0x7f020002;
+        public static final int botonjugar=0x7f020003;
+        public static final int botonjugardown=0x7f020004;
+        public static final int botonjugarpulsado=0x7f020005;
+        public static final int botonsalir=0x7f020006;
+        public static final int botonsalirpulsado=0x7f020007;
+        public static final int corazones=0x7f020008;
+        public static final int gradient=0x7f020009;
+        public static final int hielo1=0x7f02000a;
+        public static final int ic_launcher=0x7f02000b;
+        public static final int logo1=0x7f02000c;
+        public static final int ruleta=0x7f02000d;
+        public static final int ruleta1=0x7f02000e;
+        public static final int ruleta2=0x7f02000f;
+        public static final int ruleta2encendidasbtn=0x7f020010;
+        public static final int ruleta2luces1=0x7f020011;
+        public static final int ruleta2luces2=0x7f020012;
+        public static final int ruleta2lucesapagadas=0x7f020013;
+        public static final int ruleta2todasencendidas=0x7f020014;
+        public static final int ruleta3=0x7f020015;
+        public static final int titulojuego=0x7f020016;
+        public static final int titulologros=0x7f020017;
     }
     public static final class id {
-        public static final int action_settings=0x7f080006;
-        public static final int button1=0x7f080003;
-        public static final int idBotonAtras=0x7f080005;
+        public static final int action_settings=0x7f08000f;
+        public static final int anuncioJuego=0x7f080005;
+        public static final int anuncioJuego2=0x7f080008;
+        public static final int anuncioPrincipal=0x7f080003;
+        public static final int button1=0x7f080007;
+        public static final int idBotonAtras=0x7f080006;
         public static final int imageView1=0x7f080000;
-        public static final int imageView2=0x7f080002;
-        public static final int imageView3=0x7f080001;
+        public static final int imageView2=0x7f080001;
+        public static final int imageView3=0x7f080002;
+        public static final int tableRow1=0x7f080009;
+        public static final int tableRow2=0x7f08000a;
+        public static final int tableRow3=0x7f08000d;
+        public static final int tableRow4=0x7f08000e;
+        public static final int textView3=0x7f08000b;
+        public static final int textView6=0x7f08000c;
         public static final int tituloJuegoView=0x7f080004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int juego=0x7f030001;
+        public static final int juego2=0x7f030002;
+        public static final int pantallaresultado=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -86,5 +105,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int Theme_Dialogo=0x7f060002;
     }
 }

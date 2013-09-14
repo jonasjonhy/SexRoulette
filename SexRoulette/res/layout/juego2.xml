@@ -1,0 +1,70 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/gradient"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ruleta2lucesapagadas" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/app_name"
+		android:layout_centerInParent="true"
+        android:src="@drawable/hielo1" />
+
+    <ImageView
+        android:id="@+id/tituloJuegoView"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="-10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/titulojuego" />
+
+    <ImageButton
+        android:id="@+id/idBotonAtras"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:background="@drawable/botonatras"
+        android:contentDescription="@string/app_name"
+        android:onClick="lanzarMenuPrincipal" />
+
+    <com.google.ads.AdView
+        android:id="@+id/anuncioJuego2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7774843908695472/3993482813"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
+    </com.google.ads.AdView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/anuncioJuego2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:onClick="lanzarRuleta"
+        android:layout_margin="5dp"
+        android:text="Button" />
+
+</RelativeLayout>
