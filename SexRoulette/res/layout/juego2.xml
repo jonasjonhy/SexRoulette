@@ -52,19 +52,30 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-7774843908695472/3993482813"
+        ads:adUnitId="ca-app-pub-7774843908695472/8312604411"
         ads:loadAdOnCreate="true"
         ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
     </com.google.ads.AdView>
 
-    <Button
+<ImageView
         android:id="@+id/button1"
+        android:contentDescription="@string/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/anuncioJuego2"
-        android:layout_alignLeft="@+id/imageView2"
-        android:onClick="lanzarRuleta"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
-        android:text="Button" />
+        android:onClick="lanzarRuleta"
+        android:src="@drawable/lanzar" />
 
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:layout_centerVertical="true"
+        android:src="@drawable/palito1" />
+    
 </RelativeLayout>

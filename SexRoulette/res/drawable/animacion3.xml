@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <animation-list
+xmlns:android= "http://schemas.android.com/apk/res/android"
+   android:oneshot= "true">
+          <item android:drawable="@drawable/palito1" 
+                       android:duration="250" />
+           <item android:drawable="@drawable/palito2" 
+                       android:duration="250" />
+            <item android:drawable="@drawable/palito3" 
+                       android:duration="250" />
+             <item android:drawable="@drawable/palito4" 
+                       android:duration="250" />
+              <item android:drawable="@drawable/palito3" 
+                       android:duration="250" />
+               <item android:drawable="@drawable/palito2" 
+                       android:duration="250" />
+                <item android:drawable="@drawable/palito1" 
+                       android:duration="250" />
+                <item android:drawable="@drawable/palito1" 
+                       android:duration="250" />
+           <item android:drawable="@drawable/palito2" 
+                       android:duration="250" />
+            <item android:drawable="@drawable/palito3" 
+                       android:duration="250" />
+             <item android:drawable="@drawable/palito4" 
+                       android:duration="250" />
+              <item android:drawable="@drawable/palito3" 
+                       android:duration="250" />
+               <item android:drawable="@drawable/palito2" 
+                       android:duration="250" />
+                <item android:drawable="@drawable/palito1" 
+                       android:duration="250" />
+               
+</animation-list>
+

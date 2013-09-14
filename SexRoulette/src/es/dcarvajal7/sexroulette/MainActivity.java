@@ -46,6 +46,11 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	 public void lanzarAcercaDe(View view){
+	        Intent i = new Intent(this, AcercaDe.class);
+	              startActivity(i);
+	      }
+	
 	public void lanzarJuego(View view){
 		Intent i = new Intent(this, Juego.class);
         startActivity(i);

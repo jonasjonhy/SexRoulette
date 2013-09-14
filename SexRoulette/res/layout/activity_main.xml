@@ -44,9 +44,19 @@
          android:layout_alignParentBottom="true"
          android:layout_alignParentRight="true"
          ads:adSize="BANNER"
-         ads:adUnitId="ca-app-pub-7774843908695472/3993482813"
+         ads:adUnitId="ca-app-pub-7774843908695472/8312604411"
          ads:loadAdOnCreate="true"
          ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
      </com.google.ads.AdView>
+
+     <ImageButton
+         android:id="@+id/idBotonAtras"
+         android:layout_width="84dp"
+         android:layout_height="80dp"
+         android:layout_above="@+id/anuncioPrincipal"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/bitewarelogo"
+         android:contentDescription="@string/Acercade"
+         android:onClick="lanzarAcercaDe" />
 
 </RelativeLayout>

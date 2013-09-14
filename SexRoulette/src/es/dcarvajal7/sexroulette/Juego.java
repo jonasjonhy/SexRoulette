@@ -15,7 +15,6 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class Juego extends Activity {
 
@@ -36,10 +35,15 @@ public class Juego extends Activity {
     
     public void lanzarRuleta(View view){
         ImageView aniView = (ImageView) findViewById(R.id.imageView1);
-        
+        ImageView aniView2 = (ImageView) findViewById(R.id.imageView3);
+
         AnimationDrawable animacion = (AnimationDrawable)getResources().getDrawable(R.drawable.animacion);
         aniView.setImageDrawable(animacion);
         animacion.start();
+        
+        AnimationDrawable animacion2 = (AnimationDrawable)getResources().getDrawable(R.drawable.animacion3);
+        aniView2.setImageDrawable(animacion2);
+        animacion2.start();
         
         Random r = new Random();
         
@@ -62,24 +66,23 @@ public class Juego extends Activity {
             public void onAnimationEnd(Animation animation) {
             	String accion="";
             	if(seleccion<=30){
-            		accion="lamer";
+            		accion=getResources().getString(R.string.lamer);
             	}else if(seleccion>150 && seleccion <=210){
-            		accion="cosquillas";
+            		accion=getResources().getString(R.string.cosquillas);
             	}else if(seleccion>90 && seleccion <=150){
-            		accion="besar";
+            		accion=getResources().getString(R.string.besar);
             	}else if(seleccion>30 && seleccion <=90){
-            		accion="masaje";
+            		accion=getResources().getString(R.string.masaje);
             	}else if(seleccion>210 && seleccion <=270){
-            		accion="morder";
+            		accion=getResources().getString(R.string.morder);
             	}else if(seleccion>270 && seleccion <=330){
-            		accion="tocar";
+            		accion=getResources().getString(R.string.tocar);
             	}else if(seleccion>330 && seleccion <=360){
-            		accion="lamer";
+            		accion=getResources().getString(R.string.lamer);
             	}
-            	 Toast toast1 = Toast.makeText(getApplicationContext(),accion + seleccion, Toast.LENGTH_SHORT);
-            	 toast1.show();
             	 Intent i = new Intent(Juego.this, PantallaResultado.class);
             	 i.putExtra("pantalla", "juego1");
+            	 i.putExtra("accion", accion);
                  startActivity(i);
             }
 
@@ -93,7 +96,8 @@ public class Juego extends Activity {
     }
     
     public void lanzarMenuPrincipal(View view){
-        this.finish();
+    	Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
       }  
 
 }

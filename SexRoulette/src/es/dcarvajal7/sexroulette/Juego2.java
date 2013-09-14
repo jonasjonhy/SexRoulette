@@ -16,13 +16,14 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class Juego2 extends Activity {
 
 	float inicio=0.0f;
 	float fin=0.0f;
 	float seleccion=0.0f;
+	
+	String accion1;
 	
     @Override public void onCreate(Bundle savedInstanceState) {
 
@@ -33,15 +34,22 @@ public class Juego2 extends Activity {
         AdView adView = (AdView)this.findViewById(R.id.anuncioJuego2);
         adView.loadAd(new AdRequest());
         
+        Bundle bundle=getIntent().getExtras();
+        accion1=bundle.getString("accion1");
 
     }
     
     public void lanzarRuleta(View view){
         ImageView aniView = (ImageView) findViewById(R.id.imageView1);
-        
+        ImageView aniView2 = (ImageView) findViewById(R.id.imageView3);
+
         AnimationDrawable animacion = (AnimationDrawable)getResources().getDrawable(R.drawable.animacion2);
         aniView.setImageDrawable(animacion);
         animacion.start();
+        
+        AnimationDrawable animacion2 = (AnimationDrawable)getResources().getDrawable(R.drawable.animacion3);
+        aniView2.setImageDrawable(animacion2);
+        animacion2.start();
         
         Random r = new Random();
         
@@ -64,24 +72,25 @@ public class Juego2 extends Activity {
             public void onAnimationEnd(Animation animation) {
             	String accion="";
             	if(seleccion<=30){
-            		accion="labios";
+            		accion=getResources().getString(R.string.boca);
             	}else if(seleccion>150 && seleccion <=210){
-            		accion="pezones";
+            		accion=getResources().getString(R.string.pezon);
             	}else if(seleccion>90 && seleccion <=150){
-            		accion="entrepierna";
+            		accion=getResources().getString(R.string.entrepierna);
             	}else if(seleccion>30 && seleccion <=90){
-            		accion="orejas";
+            		accion=getResources().getString(R.string.oreja);
             	}else if(seleccion>210 && seleccion <=270){
-            		accion="boca";
+            		accion=getResources().getString(R.string.cuello);
             	}else if(seleccion>270 && seleccion <=330){
-            		accion="tetas";
+            		accion=getResources().getString(R.string.pechos);
             	}else if(seleccion>330 && seleccion <=360){
-            		accion="labios";
+            		accion=getResources().getString(R.string.boca);
             	}
-            	 Toast toast1 = Toast.makeText(getApplicationContext(),accion + seleccion, Toast.LENGTH_SHORT);
-            	 toast1.show();
             	 Intent i = new Intent(Juego2.this, PantallaResultado.class);
-            	 i.putExtra("pantalla", "juego1");
+            	 i.putExtra("pantalla", "juego2");
+            	 i.putExtra("accion", accion);
+            	 i.putExtra("accion1", accion1);
+            	 
                  startActivity(i);
             }
 
@@ -95,7 +104,8 @@ public class Juego2 extends Activity {
     }
     
     public void lanzarMenuPrincipal(View view){
-        this.finish();
-      }  
+    	Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }  
 
 }
