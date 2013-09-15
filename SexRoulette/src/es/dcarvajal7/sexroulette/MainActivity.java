@@ -6,6 +6,7 @@ import com.google.ads.AdView;
 import android.R.anim;
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -49,6 +50,15 @@ public class MainActivity extends Activity {
 	 public void lanzarAcercaDe(View view){
 	        Intent i = new Intent(this, AcercaDe.class);
 	              startActivity(i);
+	      }
+	 
+	 public void lanzarpush(View view){
+	    	final String appName = "dcarvajal.pushAndSex2";
+	    	try {
+	    	    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id="+appName)));
+	    	} catch (android.content.ActivityNotFoundException anfe) {
+	    	    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id="+appName)));
+	    	}
 	      }
 	
 	public void lanzarJuego(View view){
