@@ -1,9 +1,5 @@
 package es.dcarvajal7.sexroulette;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
-
-import android.R.anim;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -14,6 +10,9 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class MainActivity extends Activity {
 
@@ -49,6 +48,11 @@ public class MainActivity extends Activity {
 	
 	 public void lanzarAcercaDe(View view){
 	        Intent i = new Intent(this, AcercaDe.class);
+	              startActivity(i);
+	      }
+	 
+	 public void lanzarTrucos(View view){
+	        Intent i = new Intent(this, Trucos.class);
 	              startActivity(i);
 	      }
 	 

@@ -70,24 +70,33 @@ public final class R {
         public static final int titulojuego=0x7f02002e;
         public static final int titulologros=0x7f02002f;
         public static final int tocar=0x7f020030;
-        public static final int volveraempezar=0x7f020031;
+        public static final int trucos=0x7f020031;
+        public static final int volveraempezar=0x7f020032;
     }
     public static final class id {
+        public static final int ScrollView02=0x7f080010;
         public static final int TextView01=0x7f080000;
-        public static final int action_settings=0x7f08000e;
-        public static final int anuncioJuego=0x7f080009;
-        public static final int anuncioJuego2=0x7f08000b;
+        public static final int TextViewDesc=0x7f080012;
+        public static final int TextViewPosturaList01=0x7f08000f;
+        public static final int TextViewTitulo=0x7f080011;
+        public static final int action_settings=0x7f080016;
+        public static final int anuncioItem=0x7f080013;
+        public static final int anuncioJuego=0x7f08000a;
+        public static final int anuncioJuego2=0x7f08000c;
+        public static final int anuncioList=0x7f080014;
         public static final int anuncioPrincipal=0x7f080005;
-        public static final int button1=0x7f08000a;
+        public static final int button1=0x7f08000b;
         public static final int idBotonAtras=0x7f080002;
         public static final int idbiteware=0x7f080001;
         public static final int imageView1=0x7f080003;
         public static final int imageView2=0x7f080006;
         public static final int imageView3=0x7f080004;
-        public static final int imageView4=0x7f080007;
-        public static final int textView1=0x7f08000c;
-        public static final int textView2=0x7f08000d;
-        public static final int tituloJuegoView=0x7f080008;
+        public static final int imageView4=0x7f080008;
+        public static final int imageViewTrucos=0x7f080007;
+        public static final int list=0x7f080015;
+        public static final int textView1=0x7f08000d;
+        public static final int textView2=0x7f08000e;
+        public static final int tituloJuegoView=0x7f080009;
     }
     public static final class layout {
         public static final int acercade=0x7f030000;
@@ -95,6 +104,9 @@ public final class R {
         public static final int juego=0x7f030002;
         public static final int juego2=0x7f030003;
         public static final int pantallaresultado=0x7f030004;
+        public static final int truco=0x7f030005;
+        public static final int trucoitem=0x7f030006;
+        public static final int trucos=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -111,6 +123,18 @@ public final class R {
         public static final int cuello=0x7f05000c;
         public static final int entrepierna=0x7f050011;
         public static final int hello_world=0x7f050002;
+        public static final int k1=0x7f050012;
+        public static final int k1n=0x7f050013;
+        public static final int k2=0x7f050014;
+        public static final int k2n=0x7f050015;
+        public static final int k3=0x7f050016;
+        public static final int k3n=0x7f050017;
+        public static final int k4=0x7f050018;
+        public static final int k4n=0x7f050019;
+        public static final int k5=0x7f05001a;
+        public static final int k5n=0x7f05001b;
+        public static final int k6=0x7f05001c;
+        public static final int k6n=0x7f05001d;
         public static final int lamer=0x7f050009;
         public static final int masaje=0x7f05000b;
         public static final int morder=0x7f050007;

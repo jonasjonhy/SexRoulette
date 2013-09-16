@@ -45,25 +45,37 @@
          android:contentDescription="@string/app_name"
          android:src="@drawable/logo1" />
 
-     <ImageView
-         android:id="@+id/imageView4"
-         android:layout_width="80dp"
-         android:layout_margin="10dp"
-         android:contentDescription="@string/app_name"
-         android:layout_height="80dp"
-         android:layout_above="@+id/anuncioPrincipal"
-         android:layout_alignRight="@+id/anuncioPrincipal"
-         android:onClick="lanzarpush"
-         android:src="@drawable/logopush" />
+    <ImageView
+        android:id="@+id/imageViewTrucos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/idBotonAtras"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:contentDescription="@string/app_name"
+        android:onClick="lanzarTrucos"
+        android:src="@drawable/trucos" />
 
-     <ImageButton
-         android:id="@+id/idBotonAtras"
-         android:layout_width="84dp"
-         android:layout_height="80dp"
-         android:layout_alignTop="@+id/imageView4"
-         android:layout_centerHorizontal="true"
-         android:background="@drawable/bitewarelogo"
-         android:contentDescription="@string/Acercade"
-         android:onClick="lanzarAcercaDe" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/idBotonAtras"
+        android:layout_toRightOf="@+id/imageView3"
+        android:contentDescription="@string/app_name"
+        android:onClick="lanzarpush"
+        android:src="@drawable/logopush" />
+
+    <ImageButton
+        android:id="@+id/idBotonAtras"
+        android:layout_width="84dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:layout_above="@+id/anuncioPrincipal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bitewarelogo"
+        android:contentDescription="@string/Acercade"
+        android:onClick="lanzarAcercaDe" />
 
 </RelativeLayout>
