@@ -47,8 +47,12 @@ public class MainActivity extends Activity {
 	}
 	
 	 public void lanzarAcercaDe(View view){
-	        Intent i = new Intent(this, AcercaDe.class);
-	              startActivity(i);
+		 final String appName = "BiteWare";
+	    	try {
+	    	    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://developer?id="+appName)));
+	    	} catch (android.content.ActivityNotFoundException anfe) {
+	    	    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/developer?id="+appName)));
+	    	}
 	      }
 	 
 	 public void lanzarTrucos(View view){
