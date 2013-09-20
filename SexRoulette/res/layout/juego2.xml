@@ -45,18 +45,6 @@
         android:onClick="lanzarMenuPrincipal" />
 
 
-<ImageView
-        android:id="@+id/button1"
-        android:contentDescription="@string/app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/anuncioJuego2"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:onClick="lanzarRuleta"
-        android:src="@drawable/lanzar" />
-
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="60dp"
@@ -65,5 +53,29 @@
         android:contentDescription="@string/app_name"
         android:layout_centerVertical="true"
         android:src="@drawable/palito1" />
+    
+    	<com.adsdk.sdk.banner.AdView
+        android:id="@+id/mobFoxView"
+		android:layout_width="300dp"
+		android:background="#000000"
+		android:layout_height="50dp"
+		android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+		request_url="http://my.mobfox.com/request.php"
+		publisherId="5cae5f12ef7ae8a53cab4ac9228c87c9"
+		location="true"
+		animation="true"
+		/>
+
+    	<ImageView
+    	    android:id="@+id/button1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/mobFoxView"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_margin="5dp"
+    	    android:contentDescription="@string/app_name"
+    	    android:onClick="lanzarRuleta"
+    	    android:src="@drawable/lanzar" />
     
 </RelativeLayout>

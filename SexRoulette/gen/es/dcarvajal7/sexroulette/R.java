@@ -73,26 +73,25 @@ public final class R {
         public static final int volveraempezar=0x7f020031;
     }
     public static final class id {
-        public static final int ScrollView02=0x7f08000d;
-        public static final int TextView01=0x7f080011;
-        public static final int TextViewDesc=0x7f08000f;
-        public static final int TextViewPosturaList01=0x7f08000c;
-        public static final int TextViewTitulo=0x7f08000e;
-        public static final int action_settings=0x7f080013;
-        public static final int anuncioJuego=0x7f080008;
-        public static final int anuncioJuego2=0x7f080009;
-        public static final int button1=0x7f080007;
-        public static final int button2=0x7f080012;
+        public static final int ScrollView02=0x7f08000c;
+        public static final int TextView01=0x7f080010;
+        public static final int TextViewDesc=0x7f08000e;
+        public static final int TextViewPosturaList01=0x7f08000b;
+        public static final int TextViewTitulo=0x7f08000d;
+        public static final int action_settings=0x7f080012;
+        public static final int button1=0x7f080008;
+        public static final int button2=0x7f080011;
         public static final int idBotonAtras=0x7f080004;
         public static final int imageView1=0x7f080000;
         public static final int imageView2=0x7f080002;
         public static final int imageView3=0x7f080001;
         public static final int imageView4=0x7f080005;
         public static final int imageViewTrucos=0x7f080003;
-        public static final int list=0x7f080010;
-        public static final int textView1=0x7f08000a;
-        public static final int textView2=0x7f08000b;
-        public static final int tituloJuegoView=0x7f080006;
+        public static final int list=0x7f08000f;
+        public static final int mobFoxView=0x7f080006;
+        public static final int textView1=0x7f080009;
+        public static final int textView2=0x7f08000a;
+        public static final int tituloJuegoView=0x7f080007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
