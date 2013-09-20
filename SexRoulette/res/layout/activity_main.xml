@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".MainActivity" 
-    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -24,17 +23,6 @@
         android:onClick="lanzarJuego"
         android:src="@drawable/botonjugardown" />
 
-     <com.google.ads.AdView
-         android:id="@+id/anuncioPrincipal"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentRight="true"
-         ads:adSize="BANNER"
-         ads:adUnitId="ca-app-pub-7774843908695472/8312604411"
-         ads:loadAdOnCreate="true"
-         ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
-     </com.google.ads.AdView>
 
      <ImageView
          android:id="@+id/imageView2"
@@ -71,11 +59,11 @@
         android:id="@+id/idBotonAtras"
         android:layout_width="84dp"
         android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView1"
         android:layout_margin="30dp"
-        android:layout_above="@+id/anuncioPrincipal"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/bitewarelogo"
-        android:contentDescription="@string/Acercade"
+        android:contentDescription="@string/app_name"
         android:onClick="lanzarAcercaDe" />
 
 </RelativeLayout>

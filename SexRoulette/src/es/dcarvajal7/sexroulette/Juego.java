@@ -2,8 +2,6 @@ package es.dcarvajal7.sexroulette;
 
 import java.util.Random;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
 
 
 import android.app.Activity;
@@ -28,8 +26,6 @@ public class Juego extends Activity {
 
         setContentView(R.layout.juego);
 
-        AdView adView = (AdView)this.findViewById(R.id.anuncioJuego);
-        adView.loadAd(new AdRequest());
         
     }
     

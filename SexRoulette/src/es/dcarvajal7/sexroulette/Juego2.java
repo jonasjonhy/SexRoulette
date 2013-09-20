@@ -2,8 +2,6 @@ package es.dcarvajal7.sexroulette;
 
 import java.util.Random;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
 
 
 
@@ -31,8 +29,6 @@ public class Juego2 extends Activity {
 
         setContentView(R.layout.juego2);
         
-        AdView adView = (AdView)this.findViewById(R.id.anuncioJuego2);
-        adView.loadAd(new AdRequest());
         
         Bundle bundle=getIntent().getExtras();
         accion1=bundle.getString("accion1");

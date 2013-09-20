@@ -4,8 +4,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" 
-    android:background="@drawable/gradient"
-    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    android:background="@drawable/gradient">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -45,17 +44,6 @@
         android:contentDescription="@string/app_name"
         android:onClick="lanzarMenuPrincipal" />
 
-    <com.google.ads.AdView
-        android:id="@+id/anuncioJuego2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-7774843908695472/8312604411"
-        ads:loadAdOnCreate="true"
-        ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
-    </com.google.ads.AdView>
 
 <ImageView
         android:id="@+id/button1"

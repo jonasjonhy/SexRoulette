@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
 
 
 public class TrucoItem extends Activity {
@@ -27,9 +25,6 @@ public class TrucoItem extends Activity {
         
         
         setContentView(R.layout.trucoitem);
-        
-        AdView adView = (AdView)this.findViewById(R.id.anuncioItem);
-        adView.loadAd(new AdRequest());
         
         TextView trucoTitulo = (TextView)this.findViewById(R.id.TextViewTitulo);
         TextView trucoTexto = (TextView)this.findViewById(R.id.TextViewDesc);

@@ -11,8 +11,6 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
 
 public class MainActivity extends Activity {
 
@@ -21,8 +19,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		AdView adView = (AdView)this.findViewById(R.id.anuncioPrincipal);
-        adView.loadAd(new AdRequest());
 		
         ImageView aniView = (ImageView) findViewById(R.id.imageView1);
 

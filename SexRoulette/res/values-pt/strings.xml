@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SexRoulette</string>
+    <string name="app_name">SexRoulette FREE</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="Salir">Deixar</string>
     
+    <string name="versionPremium">Todos esses truques e muito mais na versão Premium, baixá-lo!</string>
+    
+    <string name="versionPremium2">Baixar!</string>
     
     <string name="besar">Beijar</string>
     <string name="morder">Morder</string>

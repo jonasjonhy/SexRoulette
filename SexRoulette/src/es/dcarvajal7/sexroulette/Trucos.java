@@ -9,9 +9,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
-
 
 public class Trucos extends Activity {
 	
@@ -33,8 +30,6 @@ public class Trucos extends Activity {
     	this.datos=datos;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trucos);
-        AdView adView = (AdView)this.findViewById(R.id.anuncioList);
-        adView.loadAd(new AdRequest());
         
         lv = (ListView)findViewById(R.id.list);
         
@@ -45,9 +40,8 @@ public class Trucos extends Activity {
             public void onItemClick(AdapterView<?> parent, View view,
                 int position, long id) {
             	
-            	Intent i1 = new Intent(Trucos.this, TrucoItem.class);
+            	Intent i1 = new Intent(Trucos.this, VersionPremium.class);
                 
-                i1.putExtra("truco", position);
 
                 startActivity(i1);
             }
