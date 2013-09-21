@@ -72,7 +72,6 @@
     	    android:layout_height="wrap_content"
     	    android:layout_above="@+id/button1"
     	    android:layout_centerHorizontal="true"
-    	    android:layout_marginBottom="18dp"
     	    adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
     	    adfonic:refresh_ad="true"
     	    adfonic:refresh_time="30" />
