@@ -33,17 +33,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/titulojuego" />
-    
-
-    <ImageButton
-        android:id="@+id/idBotonAtras"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/button1"
-        android:background="@drawable/botonatras"
-        android:contentDescription="@string/app_name"
-        android:onClick="lanzarMenuPrincipal" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -54,6 +43,28 @@
         android:layout_centerVertical="true"
         android:src="@drawable/palito1" />
 
+    	<com.adfonic.android.AdfonicView
+    	    xmlns:adfonic="http://schemas.android.com/apk/lib/com.adfonic.android"
+    	    android:id="@+id/adfonicView1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/button1"
+    	    android:layout_centerHorizontal="true"
+    	    adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
+    	    adfonic:language="@string/lang"
+    	    adfonic:refresh_ad="true"
+    	    adfonic:refresh_time="30" />
+
+    	<ImageButton
+    	    android:id="@+id/idBotonAtras"
+    	    android:layout_width="45dp"
+    	    android:layout_height="45dp"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentRight="true"
+    	    android:background="@drawable/botonatras"
+    	    android:contentDescription="@string/app_name"
+    	    android:onClick="lanzarMenuPrincipal" />
+
     	<ImageView
     	    android:id="@+id/button1"
     	    android:layout_width="wrap_content"
@@ -61,19 +72,9 @@
     	    android:layout_alignParentBottom="true"
     	    android:layout_centerHorizontal="true"
     	    android:layout_margin="10dp"
+    	    android:layout_marginBottom="30dp"
     	    android:contentDescription="@string/app_name"
     	    android:onClick="lanzarRuleta"
     	    android:src="@drawable/lanzar" />
-
-    	<com.adfonic.android.AdfonicView
-    	    xmlns:adfonic="http://schemas.android.com/apk/lib/com.adfonic.android"
-    	    android:id="@+id/mobFoxView"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_above="@+id/button1"
-    	    android:layout_centerHorizontal="true"
-    	    adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
-    	    adfonic:refresh_ad="true"
-    	    adfonic:refresh_time="30" />
 
 </RelativeLayout>

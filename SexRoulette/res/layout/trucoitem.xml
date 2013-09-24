@@ -32,16 +32,15 @@
 		  android:text="@string/app_name">
 		</TextView>
 		
-			<com.adsdk.sdk.banner.AdView
-        android:id="@+id/mobFoxView"
-		android:layout_width="300dp"
-		android:background="#000000"
-		android:layout_height="50dp"
-		request_url="http://my.mobfox.com/request.php"
-		publisherId="5cae5f12ef7ae8a53cab4ac9228c87c9"
-		location="true"
-		animation="true"
-		/>
+			<com.adfonic.android.AdfonicView
+        xmlns:adfonic="http://schemas.android.com/apk/lib/com.adfonic.android"
+        android:id="@+id/adfonicView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
+        adfonic:language="@string/lang"
+        adfonic:refresh_ad="true"
+        adfonic:refresh_time="30" />
 		
 		<ImageButton
 				       android:id="@+id/idBotonAtras"

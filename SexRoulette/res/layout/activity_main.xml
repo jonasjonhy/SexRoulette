@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:contentDescription="@string/app_name"
         android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/ruleta2encendidasbtn" />
 
     <ImageView
@@ -23,22 +23,21 @@
         android:onClick="lanzarJuego"
         android:src="@drawable/botonjugardown" />
 
-
-     <ImageView
-         android:id="@+id/imageView2"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentTop="true"
-         android:layout_centerHorizontal="true"
-         android:contentDescription="@string/app_name"
-         android:src="@drawable/logo1" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo1" />
 
     <ImageView
         android:id="@+id/imageViewTrucos"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="5dp"
         android:layout_alignTop="@+id/idBotonAtras"
+        android:layout_marginLeft="5dp"
         android:layout_toLeftOf="@+id/imageView3"
         android:contentDescription="@string/app_name"
         android:onClick="lanzarTrucos"
@@ -48,37 +47,34 @@
         android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginRight="5dp"
         android:layout_alignTop="@+id/idBotonAtras"
+        android:layout_marginRight="5dp"
         android:layout_toRightOf="@+id/imageView3"
         android:contentDescription="@string/app_name"
         android:onClick="lanzarpush"
         android:src="@drawable/logopush" />
 
-	<ImageButton
-	    android:id="@+id/idBotonAtras"
-	    android:layout_width="84dp"
-	    android:layout_height="80dp"
-	    android:layout_above="@+id/mobFoxView"
-	    android:layout_centerHorizontal="true"
-	    android:layout_margin="30dp"
-	    android:background="@drawable/bitewarelogo"
-	    android:contentDescription="@string/app_name"
-	    android:onClick="lanzarAcercaDe" />
+    <ImageButton
+        android:id="@+id/idBotonAtras"
+        android:layout_width="84dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/bitewarelogo"
+        android:contentDescription="@string/app_name"
+        android:onClick="lanzarAcercaDe" />
 
-	<com.adsdk.sdk.banner.AdView
-        android:id="@+id/mobFoxView"
-		android:layout_width="300dp"
-		android:background="#000000"
-		android:layout_height="50dp"
-		android:layout_alignParentBottom="true"
-	    android:layout_alignParentLeft="true"
-		request_url="http://my.mobfox.com/request.php"
-		publisherId="5cae5f12ef7ae8a53cab4ac9228c87c9"
-		location="true"
-		animation="true"
-		/>
+    <com.adfonic.android.AdfonicView
+        xmlns:adfonic="http://schemas.android.com/apk/lib/com.adfonic.android"
+        android:id="@+id/adfonicView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewTrucos"
+        android:layout_centerHorizontal="true"
+        adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
+        adfonic:language="@string/lang"
+        adfonic:refresh_ad="true"
+        adfonic:refresh_time="30" />
 
 </RelativeLayout>
-
-
