@@ -79,7 +79,7 @@ public final class R {
         public static final int TextViewPosturaList01=0x7f08000b;
         public static final int TextViewTitulo=0x7f08000d;
         public static final int action_settings=0x7f080012;
-        public static final int adfonicView1=0x7f080006;
+        public static final int bannerAd=0x7f080006;
         public static final int button1=0x7f080008;
         public static final int button2=0x7f080011;
         public static final int idBotonAtras=0x7f080004;

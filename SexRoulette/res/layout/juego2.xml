@@ -35,7 +35,14 @@
         android:background="@drawable/botonatras"
         android:contentDescription="@string/app_name"
         android:onClick="lanzarMenuPrincipal" />
-
+    
+    <ImageView
+    	    android:id="@+id/imageView1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerInParent="true"
+    	    android:contentDescription="@string/app_name"
+    	    android:src="@drawable/ruleta2lucesapagadas" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -46,37 +53,25 @@
         android:layout_centerVertical="true"
         android:src="@drawable/palito1" />
 
-    	<ImageView
-    	    android:id="@+id/imageView1"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_alignParentLeft="true"
-    	    android:layout_alignParentTop="true"
-    	    android:contentDescription="@string/app_name"
-    	    android:src="@drawable/ruleta2lucesapagadas" />
+    	<com.tapit.adview.AdView
+    	    android:id="@+id/bannerAd"
+    	    android:layout_width="320dp"
+    	    android:layout_height="50dp"
+    	    zone="33939"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentLeft="true" />
 
     	<ImageView
     	    android:id="@+id/button1"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
-    	    android:layout_alignParentBottom="true"
+    	    android:layout_above="@+id/bannerAd"
     	    android:layout_centerHorizontal="true"
     	    android:layout_margin="5dp"
     	    android:contentDescription="@string/app_name"
     	    android:onClick="lanzarRuleta"
     	    android:src="@drawable/lanzar" />
 
-    	<com.adfonic.android.AdfonicView
-    	    xmlns:adfonic="http://schemas.android.com/apk/lib/com.adfonic.android"
-    	    android:id="@+id/adfonicView1"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_above="@+id/button1"
-    	    android:layout_marginBottom="16dp"
-    	    android:layout_toRightOf="@+id/imageView3"
-    	    adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
-    	    adfonic:language="@string/lang"
-    	    adfonic:refresh_ad="true"
-    	    adfonic:refresh_time="30" />
+    	
     
 </RelativeLayout>

@@ -6,17 +6,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <requestFocus />
-    <com.adfonic.android.AdfonicView
-        xmlns:adfonic="http://schemas.android.com/apk/lib/com.adfonic.android"
-        android:id="@+id/adfonicView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        adfonic:adfonic_adslot_id="921b5123-0e28-482d-b0e5-4568dd6abbbe"
-        adfonic:language="@string/lang"
-        adfonic:refresh_ad="true"
-        adfonic:refresh_time="30" />
+    <com.tapit.adview.AdView
+    	    android:id="@+id/bannerAd"
+    	    android:layout_width="320dp"
+    	    android:layout_height="50dp"
+    	    zone="33939"/>
     
 	<ListView 
 		android:id="@+id/list"
