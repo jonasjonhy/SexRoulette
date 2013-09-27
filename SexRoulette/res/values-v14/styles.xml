@@ -9,7 +9,7 @@
         <!-- API 14 theme customizations can go here. -->
     </style>
     
-        <style 
+    <style 
         name="Theme.Dialogo"
         parent="android:Theme.Holo.Light.Dialog">
     </style>
