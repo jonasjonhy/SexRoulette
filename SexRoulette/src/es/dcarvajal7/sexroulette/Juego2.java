@@ -2,6 +2,8 @@ package es.dcarvajal7.sexroulette;
 
 import java.util.Random;
 
+import com.tapit.adview.AdInterstitialView;
+
 
 
 
@@ -22,6 +24,8 @@ public class Juego2 extends Activity {
 	float seleccion=0.0f;
 	
 	String accion1;
+	AdInterstitialView interstitialAd;
+
 	
     @Override public void onCreate(Bundle savedInstanceState) {
 
@@ -29,7 +33,9 @@ public class Juego2 extends Activity {
 
         setContentView(R.layout.juego2);
         
-        
+        interstitialAd = new AdInterstitialView(this, "34017");
+    	interstitialAd.load();
+    	
         Bundle bundle=getIntent().getExtras();
         accion1=bundle.getString("accion1");
 
@@ -88,6 +94,15 @@ public class Juego2 extends Activity {
             	 i.putExtra("accion1", accion1);
             	 
                  startActivity(i);
+                 
+                 Random r = new Random();
+              	
+              	if(r.nextInt(99)<=30){
+                  	if(interstitialAd.isLoaded()) {
+                  	    // interstitial was loaded successfully, show it!
+                  	    interstitialAd.showInterstitial();
+                  	}
+              	}
             }
 
             @Override
