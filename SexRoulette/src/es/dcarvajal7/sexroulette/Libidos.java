@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-public class Trucos extends Activity {
+public class Libidos extends Activity {
 	
 
 	ListView lv;
@@ -20,16 +20,17 @@ public class Trucos extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	
-    	String[] datos = {getResources().getString(R.string.k1),
-  			  getResources().getString(R.string.k2),
-  			  getResources().getString(R.string.k3),
-  			  getResources().getString(R.string.k4),
-  			  getResources().getString(R.string.k5),
-  			  getResources().getString(R.string.k6)};
+    	String[] datos = {getResources().getString(R.string.q1),
+  			  getResources().getString(R.string.q2),
+  			  getResources().getString(R.string.q3),
+  			  getResources().getString(R.string.q4),
+  			  getResources().getString(R.string.q5),
+  			  getResources().getString(R.string.q6),
+  			  getResources().getString(R.string.q7)};
     	
     	this.datos=datos;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trucos);
+        setContentView(R.layout.libidos);
         
         lv = (ListView)findViewById(R.id.list);
         
@@ -40,7 +41,7 @@ public class Trucos extends Activity {
             public void onItemClick(AdapterView<?> parent, View view,
                 int position, long id) {
             	
-            	Intent i1 = new Intent(Trucos.this, VersionPremium.class);
+            	Intent i1 = new Intent(Libidos.this, VersionPremium.class);
                 
 
                 startActivity(i1);
@@ -49,11 +50,6 @@ public class Trucos extends Activity {
         
         
        
-    }
-    
-    public void libidos(View view){
-    	Intent i1 = new Intent(Trucos.this, Libidos.class);
-        startActivity(i1);
     }
     
 }

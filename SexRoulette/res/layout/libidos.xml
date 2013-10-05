@@ -12,15 +12,6 @@
     	    android:layout_height="50dp"
     	    zone="33939"/>
 
-    <ImageView
-        android:contentDescription="@string/app_name"
-        android:id="@+id/imageView1"
-        android:layout_width="88dp"
-        android:layout_height="116dp"
-        android:layout_gravity="center_horizontal"
-        android:onClick="libidos"
-        android:src="@drawable/libido" />
-    
 	<ListView 
 		android:id="@+id/list"
 		android:layout_width="fill_parent"

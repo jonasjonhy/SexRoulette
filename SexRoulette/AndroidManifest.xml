@@ -42,7 +42,14 @@
         <activity android:name="es.dcarvajal7.sexroulette.Trucos"
              	  android:label="@string/app_name"
              	  android:theme="@style/AppBaseTheme"></activity>
+        <activity android:name="es.dcarvajal7.sexroulette.Libidos"
+             	  android:label="@string/app_name"
+             	  android:theme="@style/AppBaseTheme"></activity>
          <activity android:name="es.dcarvajal7.sexroulette.TrucoItem"
+             	  android:screenOrientation="portrait"
+             	  android:label="@string/app_name"
+             	  android:theme="@style/AppBaseTheme"></activity>
+         <activity android:name="es.dcarvajal7.sexroulette.LibidoItem"
              	  android:screenOrientation="portrait"
              	  android:label="@string/app_name"
              	  android:theme="@style/AppBaseTheme"></activity>
