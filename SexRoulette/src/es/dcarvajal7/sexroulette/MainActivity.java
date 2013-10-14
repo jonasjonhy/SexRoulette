@@ -51,6 +51,15 @@ public class MainActivity extends Activity {
 	    	}
 	      }
 	 
+	 public void lanzarlove(View view){
+	    	final String appName = "es.dcarvajal7.loveIT";
+	    	try {
+	    	    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id="+appName)));
+	    	} catch (android.content.ActivityNotFoundException anfe) {
+	    	    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id="+appName)));
+	    	}
+	      }
+	 
 	 public void lanzarTrucos(View view){
 	        Intent i = new Intent(this, Trucos.class);
 	              startActivity(i);

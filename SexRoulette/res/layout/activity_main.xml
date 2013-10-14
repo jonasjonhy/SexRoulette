@@ -40,8 +40,8 @@
         android:layout_marginLeft="5dp"
         android:layout_toLeftOf="@+id/imageView3"
         android:contentDescription="@string/app_name"
-        android:onClick="lanzarTrucos"
-        android:src="@drawable/trucos" />
+        android:onClick="lanzarlove"
+        android:src="@drawable/logoloveit" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -68,9 +68,9 @@
         android:layout_height="80dp"
         android:layout_above="@+id/bannerAd"
         android:layout_centerHorizontal="true"
-        android:layout_margin="30dp"
-        android:background="@drawable/bitewarelogo"
+        android:layout_margin="20dp"
+        android:background="@drawable/trucos"
         android:contentDescription="@string/app_name"
-        android:onClick="lanzarAcercaDe" />
+        android:onClick="lanzarTrucos" />
 
 </RelativeLayout>
