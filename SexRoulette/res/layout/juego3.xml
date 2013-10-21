@@ -1,0 +1,75 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/fondotropic">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ruletatropic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/app_name"
+		android:layout_centerInParent="true"
+        android:src="@drawable/hielo1" />
+
+    <ImageView
+        android:id="@+id/tituloJuegoView"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="-10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/titulotropic" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:layout_centerVertical="true"
+        android:src="@drawable/palito1" />
+
+    	<ImageView
+    	    android:id="@+id/button1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/bannerAd"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_margin="10dp"
+    	    android:contentDescription="@string/app_name"
+    	    android:onClick="lanzarRuleta"
+    	    android:src="@drawable/lanzar2" />
+
+    	<com.tapit.adview.AdView
+    	    android:id="@+id/bannerAd"
+    	    android:layout_width="320dp"
+    	    android:layout_height="50dp"
+    	    zone="33939"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentLeft="true" />
+
+    	<ImageButton
+    	    android:id="@+id/idBotonAtras"
+    	    android:layout_width="45dp"
+    	    android:layout_height="45dp"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignTop="@+id/button1"
+    	    android:background="@drawable/botonatras"
+    	    android:contentDescription="@string/app_name"
+    	    android:onClick="lanzarMenuPrincipal" />
+
+</RelativeLayout>

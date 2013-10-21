@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 	      }
 	
 	public void lanzarJuego(View view){
-		Intent i = new Intent(this, Juego.class);
+		Intent i = new Intent(this, Niveles.class);
         startActivity(i);
 	}
 

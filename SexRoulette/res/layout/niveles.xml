@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoniveles"
+    tools:context=".MainActivity" >
+
+    <com.tapit.adview.AdView
+        android:id="@+id/bannerAd"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        zone="33939" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ruleta2encendidasbtn" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/bannerAd"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginBottom="26dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ruletatropicmenu" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="lanzarJuegotropic"
+        android:src="@drawable/tropicdown" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="lanzarJuego"
+        android:src="@drawable/clasicdown" />
+
+</RelativeLayout>
